@@ -1,0 +1,114 @@
+:root {
+  --clr-100: hsl(234, 29%, 20%);
+  --clr-200: hsl(235, 18%, 26%);
+  --clr-300: hsl(231, 7%, 60%);
+  --clr-400: hsl(0, 0%, 100%);
+  --clr-500: hsl(228, 45%, 44%);
+}
+
+/* Media Query */
+@media screen and (max-width: 767px) {
+  .desktop-image{
+    display: none;
+  }
+  .mobile-image img{
+
+    width: 50%;
+    /* padding-right: 80%; */
+    position: absolute;
+    left: 50%;
+  }
+  .container{
+    width: 100%;
+   display: block;
+  }
+  .column-one{
+    padding-top: 30%;
+  }
+}
+
+/* Sign Up First */
+
+body {
+  background-color: var(--clr-200);
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  display: flex;
+  background-color: var(--clr-400);
+  justify-content: center;
+
+  margin-left: 10%;
+  margin-top: 15%;
+  margin-right: 10%;
+  margin-bottom: 15%;
+  padding: 30px 30px 30px 30px;
+
+  border-radius: 30px;
+  gap: 30px;
+}
+.container h1 {
+  font-size: 53px;
+  font-weight: bolder;
+}
+.container p {
+  font-size: 16px;
+}
+input {
+  border-radius: 7px;
+  padding: 10px;
+  width: 75%;
+}
+.first-button {
+  border-radius: 7px;
+  padding: 15px;
+  width: 80%;
+  margin-top: 30px;
+  background-color: var(--clr-100);
+  color: var(--clr-400);
+  font-size: 19px;
+  border: none;
+  cursor: pointer;
+}
+.first-button:hover {
+  background-image: linear-gradient(to left, orange, rgb(253, 74, 74));
+}
+h5 {
+  font-size: 13px;
+}
+/* Sign In End */
+.second-container {
+  background-color: var(--clr-400);
+  width: 32%;
+  border-radius: 25px;
+  margin-left: 30%;
+  margin-right: 60%;
+  padding: 3%;
+}
+.second-container p {
+  font-size: 15px;
+}
+.second-container h1 {
+  font-size: 60px;
+}
+.second-button {
+  border-radius: 7px;
+  padding: 15px;
+  width: 80%;
+  margin-top: 20px;
+  /* margin-left: 4%; */
+  background-color: var(--clr-100);
+  color: var(--clr-400);
+  font-size: 19px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+.second-button:hover {
+  background-image: linear-gradient(to left, orange, rgb(253, 74, 74));
+}
+.second-image {
+  width: 15%;
+}
